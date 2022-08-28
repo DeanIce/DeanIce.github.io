@@ -124,7 +124,84 @@ nav {display: none;}
     }
 }
 
+.about_me{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.about_me_img{
+    box-shadow: var(--bs);
+}
+
+@media (min-width: 600px){
+    .about_me{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+
+    .about_title{
+        grid-area: title;
+    }
+
+    .about_subtitle{
+        grid-column: 1/ -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+
+    .about_me_img{
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.my_projects{
+    background-color: var(--clr-dark);
+    color: var(--clr-bg);
+    text-align: center;
+}
+
+.about_subtitle{
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio_item{
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio_image{
+    transition: transform 750ms cubic-bezier(.5,0,.5,1),
+    opacity 250ms linear;
+}
+
+.portfolio_item:focus{
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio_image:hover,
+.portfolio_item:focus .portfolio_image{
+    transform: scale(1.2);
+    opacity: .8;
+}
 
 
 
