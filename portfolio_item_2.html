@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dennis Miller Portfolio</title>
+        <link rel = "stylesheet" href ="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel = "stylesheet" href ="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+        <link rel = "stylesheet" href ="stylesheets/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button class="nav_toggle" aria-label="toggel navigation window">
+                <span class="nav_button"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="index.html#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="index.html#projects" class="nav_link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class = "intro">
+            <h1 class = "intro_title">
+                A C# Monogame Project: <strong>Mario and Kirby</strong>
+            </h1>
+            <p class = "intro_subtitle">Monogame, DevOps, 2D Game design</p>
+            <img src = "images/kirbygame.png" alt ="" class ="portrait_img">
+        </section>
+
+        <div class="project_item">
+            <p>One of my earliest game design projects was to entire recreate the first level in Nintendo's Super Mario Bros. using C# and monogame. In the spring of 2021 I learned how to use monogame, create sprites,
+            design a collision handler from scratch, and much more to recreate that famous level. We were placed in teams and tasked to expand on the game in some meaningful way, most groups decided to simply create the
+            next level. My team and I however, decided to go outside of the box and recreate another classic, Kirby's Adventure
+            </p>
+            <div class="project_multi_images">
+                <img src="images/kirby.png" alt="" class="project_img">
+                <img src="images/mariogame.png" alt="" class="project_img">
+            </div>
+            <p>We desinged a lengthy PBI document detailing the features we planned on adding, and tracked our progress in Azure DevOps. I gained skills working in a tight deadline, leading team meetings, and most importantly learning
+            when to call a project finished. While there is still a lot that could be done with our version of Kirby, we accomplished all the goals initially set and I'm proud of the final result. It was this project that solidified my love
+            for game design and programming alongside my fellow developers. Below you can find the link to first level of my version of Kirby's Adventure!
+            </p>
+            <ul class="project_links">
+                <li class="link_item"><a href="https://github.com/DeanIce/KirbyGame" class="proj_link">Github</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="contact_list">
+                <li class="contact_item"><a href="mailto:deanicee@gmail.com" class="footer_link">deanicee@gmail.com</a></li>
+                <li class="contact_item"><a href="https://github.com/DeanIce" class="footer_link">Github</a></li>
+                <li class="contact_item"><a href="https://osu.joinhandshake.com/stu/users/11559864" class="footer_link">Handshake</a></li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

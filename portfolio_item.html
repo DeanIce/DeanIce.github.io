@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dennis Miller Portfolio</title>
+        <link rel = "stylesheet" href ="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel = "stylesheet" href ="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+        <link rel = "stylesheet" href ="stylesheets/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button class="nav_toggle" aria-label="toggel navigation window">
+                <span class="nav_button"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="index.html#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="index.html#projects" class="nav_link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class = "intro">
+            <h1 class = "intro_title">
+                A Unity Game: <strong>AstroRogue</strong>
+            </h1>
+            <p class = "intro_subtitle">Unity, Scrum management, 3D Game design</p>
+            <img src = "images/astrorogue.png" alt ="" class ="portrait_img">
+        </section>
+
+        <div class="project_item">
+            <p>AstroRogue is a rouge-like 3rd person shooter that I helped develop in the spring of 2022. This was certainly my favorite project I developed
+            at OSU, designing and programming a functional game from the ground up was exhilirating. Some of my favorite features I got to work on was the unique planet gravity, the procedural level generation, Unity's new UI framework,
+            and the expansive item system.
+            </p>
+            <img src="images/FirePlanets.png" alt="">
+            <p>My team and I were in charge of setting our own goals and tracking progress using scrum framework. I helped create bi-weekly presentations showcasing progress and displaying some of our metrics, like a burndown chart.
+            I got to experience a vast ammount of game design techniques, from importing and exporting assets, to sending demo builds to friends and family for a small beta testing phase.
+            You can find the link to the github respository below, as well as short gameplay trailer!
+            </p>
+            <ul class="project_links">
+                <li class="link_item"><a href="https://github.com/DeanIce/astrorouge" class="proj_link">Github</a></li>
+                <li class="link_item"><a href="https://www.youtube.com/watch?v=eooRHEeP-gY" class="proj_link">Youtube</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="contact_list">
+                <li class="contact_item"><a href="mailto:deanicee@gmail.com" class="footer_link">deanicee@gmail.com</a></li>
+                <li class="contact_item"><a href="https://github.com/DeanIce" class="footer_link">Github</a></li>
+                <li class="contact_item"><a href="https://osu.joinhandshake.com/stu/users/11559864" class="footer_link">Handshake</a></li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
