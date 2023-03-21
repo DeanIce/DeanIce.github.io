@@ -388,8 +388,7 @@ header{
 }
 
 .project_img_alt:hover{
-    -webkit-transform:scale(1.75);
-    transform:scale(1.75);
+    transform: scale(1.75);
 }
 
 
