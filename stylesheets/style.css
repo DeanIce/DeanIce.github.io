@@ -383,4 +383,14 @@ header{
     height: 300px;
 }
 
+.project_img_alt{
+    transition: transform 0.25s ease;
+}
+
+.project_img_alt:hover{
+    -webkit-transform:scale(1.75);
+    transform:scale(1.75);
+}
+
+
 
