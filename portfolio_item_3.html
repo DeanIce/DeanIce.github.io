@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dennis Miller Portfolio</title>
+        <link rel = "stylesheet" href ="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel = "stylesheet" href ="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+        <link rel = "stylesheet" href ="stylesheets/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <button class="nav_toggle" aria-label="toggel navigation window">
+                <span class="nav_button"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="index.html#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="index.html#projects" class="nav_link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class = "intro">
+            <h1 class = "intro_title">
+                Unreal 5.1: <strong>Forest Composition</strong>
+            </h1>
+            <p class = "intro_subtitle">Unreal, Rendering, Davicni Resolve</p>
+            <img src = "images/UE5.png" alt ="" class ="portrait_img">
+        </section>
+
+        <div class="project_item">
+            <p>After graduation I took a deep dive into Unreal Enginge, and it's capability to provide realistic real time rendering. I experiemented with various lighting tools, including nanite and path tracer to create interesting enviorments. Using Unreal's 
+                texture and material editor, as well as the landscape tools, I was able to tweak shots to line up with my vision.
+
+            </p>
+            <div class="project_multi_images">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zsNW9k9B4sM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>Using the built in environment light mixer I was able to tweak the lighting settings and establish a framing shot ready for rendering in 4k. In the example shot above I used path tracer and rendered and edited using ACES with the OCIO config in unreal.
+                Then, using Davicni Resolve I was able to add some color grading, vignetting, and various tweaks.
+            </p>
+            <ul class="project_links">
+                <li class="link_item"><a href="https://www.youtube.com/watch?v=zsNW9k9B4sM" class="proj_link">YouTube</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="contact_list">
+                <li class="contact_item"><a href="mailto:deanicee@gmail.com" class="footer_link">deanicee@gmail.com</a></li>
+                <li class="contact_item"><a href="https://github.com/DeanIce" class="footer_link">Github</a></li>
+                <li class="contact_item"><a href="https://osu.joinhandshake.com/stu/users/11559864" class="footer_link">Handshake</a></li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

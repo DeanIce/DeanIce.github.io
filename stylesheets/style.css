@@ -78,7 +78,8 @@ h3 { font-size: var(--fs-h3)}
 }
 
 .about_subtitle,
-.intro_subtitle {
+.intro_subtitle,
+.services_subtitle {
     background: var(--clr-accent);
     font-family: var(--ff-sans);
     margin-bottom: 1em;
@@ -343,6 +344,47 @@ header{
 .footer_link:hover {
     opacity: .7;
     text-decoration: underline;
+}
+
+.my_services{
+    background-color: (--clr-bg);
+    color: (--clr-bg);
+    text-align: center;
+}
+
+.services_title{
+    color: var(--clr-dark);
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.service{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media (min-width: 800px){
+    .services{
+        display: flex;
+        max-width: 2000px;
+        margin: 0auto;
+    }
+
+    .services_subtitle{
+        grid-column: 1/ -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+
+    .service + .service{
+        margin-left: 2em;
+    }
 }
 
 /* project pages */
